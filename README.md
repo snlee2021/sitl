@@ -157,24 +157,41 @@ cd ~/
 
 설치 완료후 동영상에 되로 하시면 예제 파일 실행됩니다
  
-7) catkin_ws/src에 예제파일 afa를 copy
+5. catkin_ws/src에 예제파일 afa를 copy
+
 $ cd /home/kafa01/catkin_ws
+
 $ catkin build
+
 build succeed 나오면
+
 $ roscd afa
+
 $ cd run
+
 $ ./gazebo.sh
+
 ‘gazebo is ready’가 실행되고 gazebo안에 drone이 들어 있는지 확인
-8) QGroundControl 실행하고, ‘takeoff’(hold mode),실행하여 gazebo에서
-드론의 움직임, 위치 확인
-> mission mode 등 다양한 flight mode 움직임 확인
+
+6. QGroundControl 실행하고, ‘takeoff’(hold mode),실행하여 gazebo에서
+드론의 2m takeoff 움직임 확인
+
+> mission mode(자동모드) 등 다양한 flight mode 움직임 확인
  
-9) ‘mavros’가 실행하여 전달메세지 확인
+7. ‘mavros’를 실행하여 메세지 전달 link open 확인
+
 $ roscd afa
+
 $ cd run
+
 $ ./mavros.sh
  
-10) 드론에게 다양한 demo 수행명령 하달 확인
+8. 드론에게 다양한 demo 수행명령 하달
+
 $ rosrun afa setpoint_position_demo.py
-> QGroundControl ‘hold’에서 ‘offboard’ mode 변경하여 코딩명령 전달
+
+> QGroundControl ‘hold’mode에서 ‘offboard’ mode 변경하여 코딩명령 전달
+
 > 드론의 demo 수행여부 확인
+
+
