@@ -195,3 +195,4 @@ $ rosrun afa setpoint_position_demo.py
 > 드론의 demo 수행여부 확인
 
 
+https://github.com/PX4/PX4-Autopilot/tree/master/integrationtests/python_src/px4_it/mavros
