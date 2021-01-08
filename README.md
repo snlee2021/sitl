@@ -157,6 +157,7 @@ cd ~/
 
 설치 완료후 동영상에 되로 하시면 예제 파일 실행됩니다
  
+ 
 5. catkin_ws/src에 예제파일 afa를 copy
 
 $ cd /home/kafa01/catkin_ws
