@@ -76,15 +76,6 @@
   $ make posix gazebo
 
 
-모든 설치완료후 동영상대로 하시면 예제 파일 돌리시면 시뮬레이션 직접 수행하실수 있습니다
-
-
-
-
-
-
-
-
 
 
 
@@ -186,8 +177,9 @@ $ roscd afa
 $ cd run
 
 $ ./mavros.sh
+
  
-8. 드론에게 다양한 demo 수행명령 하달
+8. 드론에게 다양한 demo 수행명령 하달(파이선)
 
 $ rosrun afa setpoint_position_demo.py
 
@@ -196,4 +188,17 @@ $ rosrun afa setpoint_position_demo.py
 > 드론의 demo 수행여부 확인
 
 
+
+(C++)
+
 https://github.com/PX4/PX4-Autopilot/tree/master/integrationtests/python_src/px4_it/mavros
+
+sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
+
+
+cd ~/catkin_ws/src
+
+git clone https://github.com/Jaeyoung-Lim/modudculab_ros.git
+
+catkin build modudculab_ros
+
